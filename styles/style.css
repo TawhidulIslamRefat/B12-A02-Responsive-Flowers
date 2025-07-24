@@ -195,11 +195,11 @@ body {
   text-align: center;
 }
 .bloom-plant {
-  background-image: url("../assets/deal-bloom.png");
+  background:url('../assets/deal-bloom.png');
   background-repeat: no-repeat;
   padding: 65px 50px;
   border-radius: 22px;
-  width: 367px;
+  max-width:361px;
   height: 200px;
   
 }
@@ -208,7 +208,7 @@ body {
   background-repeat: no-repeat;
   padding: 65px 50px;
   border-radius: 22px;
-  width: 367px;
+  width:361px;
   height: 200px;
 
 }
@@ -217,7 +217,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 22px;
   padding: 172px 128px 151px 128px;
-  width: 753px;
+  width:750px;
   height: 423px;
  
 }
@@ -260,7 +260,7 @@ body {
   margin-bottom: 100px;
 }
 .input-banner{
-  background-image:url(../assets/news-letter-bg.png);
+  background-image:url('../assets/news-letter-bg.png');
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -366,7 +366,7 @@ body {
     display: none;
   }
   .nav-links-shop{
-    
+
   }
   .banner {
     flex-direction: column-reverse;
@@ -433,8 +433,8 @@ body {
   .deals-section-discription {
     padding: 0;
   }
-  .zabo-plant {
-    width: 361px;
+  .zabo-plant,.ana-plant {
+    width:340px;
     height: 200px;
     padding: 0;
     padding-top: 65px;
@@ -454,6 +454,7 @@ body {
     row-gap: 30px;
     justify-content: flex-start;
     margin: 0px 16px;
+    margin-bottom: 50px;
   }
   .social-links{
     align-items: center;
