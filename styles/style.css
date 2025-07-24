@@ -201,6 +201,7 @@ body {
   border-radius: 22px;
   width: 367px;
   height: 200px;
+  
 }
 .ana-plant {
   background-image: url("../assets/deal-ana.png");
@@ -209,6 +210,7 @@ body {
   border-radius: 22px;
   width: 367px;
   height: 200px;
+
 }
 .zabo-plant {
   background-image: url("../assets/deal-zabo.png");
@@ -217,7 +219,11 @@ body {
   padding: 172px 128px 151px 128px;
   width: 753px;
   height: 423px;
+ 
 }
+
+
+
 
 .offer {
   font-size: 1.3rem;
@@ -250,48 +256,49 @@ body {
   gap: 15px;
 }
 /* Join section styles */
-.join {
-  background-image: url("../assets/news-letter-bg.png");
-  padding: 190px 0px;
-  background-repeat: no-repeat;
+.input-banner-section{
+  margin-bottom: 100px;
+}
+.input-banner{
+  background-image:url(../assets/news-letter-bg.png);
+  background-position: center;
   background-size: cover;
+  width: 100%;
+  height: 600px;
 }
-.join-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.input-banner-title{
   align-items: center;
-}
-.join-section-title {
-  font-size: 3.2rem;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 50px;
   font-weight: 700;
   color: white;
 }
-.input-email{
-  background: #FFFFFF;
-  width:95vh;
-  height: 50px;
+.input-card{
+   text-align: center;
+  padding-top: 50px;
   display: flex;
-  margin-top:23px ;
- 
+  justify-content: center;
 }
-.input-email input{
-
-  border: none;
-  outline: none;
-  padding-left: 20px;
-  margin-right: 535px;
-}
-.input-email button{
- 
-  background-color: #e95a08;
-  color: #FFFFFF;
-  padding: 17.5px 40px;
-  border: none;
-  outline: none;
+.input-title{
+  background-color: white;
+  color: #252432;
   font-weight: 700;
-  letter-spacing: 1px;
+  padding: 26px 50px 26px 50px;
+  width:40%;
+  border: none;
 }
+.join-button{
+  background-color: #e95a08;
+  color:white;
+  font-weight: 700;
+  padding: 26px 50px 26px 50px;
+  width: auto;
+  border: none;
+
+}
+  
+ 
 /* footer section styles */
 .footer{
   display: flex;
@@ -316,8 +323,7 @@ body {
 .social-links{
   display: flex;
   column-gap: 30px;
- 
-  align-items: flex-start;
+  
 }
 
 
@@ -356,8 +362,11 @@ body {
 @media screen and (max-width: 576px) {
   .nav-links-home,
   .nav-links-about,
-  .nav-links-shop {
+  .nav-links-shop, .trust-badge,.input-banner-section {
     display: none;
+  }
+  .nav-links-shop{
+    
   }
   .banner {
     flex-direction: column-reverse;
@@ -400,9 +409,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 16px;
-  }
-  .trust-badge,.join {
-    display: none;
   }
   .plants-discription {
     padding: 0 16px;
@@ -449,4 +455,8 @@ body {
     justify-content: flex-start;
     margin: 0px 16px;
   }
+  .social-links{
+    align-items: center;
+  }
+  
 }
