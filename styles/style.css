@@ -163,18 +163,7 @@ body {
 .plants-lover-right-content {
   padding: 0 20px;
 }
-/* Join section styles */
-.join {
-  background-image: url("../assets/news-letter-bg.png");
-  padding: 190px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.join-section-title {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: white;
-}
+
 /* lastest deals section styles */
 .deals {
   margin-top: 133px;
@@ -260,7 +249,110 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+/* Join section styles */
+.join {
+  background-image: url("../assets/news-letter-bg.png");
+  padding: 190px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.join-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.join-section-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: white;
+}
+.input-email{
+  background: #FFFFFF;
+  width:95vh;
+  height: 50px;
+  display: flex;
+  margin-top:23px ;
+ 
+}
+.input-email input{
 
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  margin-right: 535px;
+}
+.input-email button{
+ 
+  background-color: #e95a08;
+  color: #FFFFFF;
+  padding: 17.5px 40px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/* footer section styles */
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer-left-title{
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+.left-side-link{
+  text-decoration: none;
+  color: #6B7280;
+  font-size: 1.1rem;
+}
+.right-side-links,.left-side-links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.social-links{
+  display: flex;
+  column-gap: 30px;
+ 
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-links-home,
   .nav-links-about,
@@ -292,7 +384,7 @@ body {
   }
   .banner-discription,
   .plants-lover-right-content ul li,
-  .deals-section-discription {
+  .deals-section-discription,.footer-left-title {
     font-size: 14px;
   }
   .plants-lover-right-content ul li {
@@ -309,7 +401,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 16px;
   }
-  .trust-badge {
+  .trust-badge,.join {
     display: none;
   }
   .plants-discription {
@@ -350,5 +442,11 @@ body {
   .shop-now-right {
     font-size: 16px;
     text-align: center;
+  }
+  .footer{
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: flex-start;
+    margin: 0px 16px;
   }
 }
