@@ -195,35 +195,29 @@ body {
   text-align: center;
 }
 .bloom-plant {
-  background:url('../assets/deal-bloom.png');
+  background: url("../assets/deal-bloom.png");
   background-repeat: no-repeat;
   padding: 65px 50px;
   border-radius: 22px;
-  max-width:361px;
+  max-width: 361px;
   height: 200px;
-  
 }
 .ana-plant {
   background-image: url("../assets/deal-ana.png");
   background-repeat: no-repeat;
   padding: 65px 50px;
   border-radius: 22px;
-  width:361px;
+  width: 361px;
   height: 200px;
-
 }
 .zabo-plant {
   background-image: url("../assets/deal-zabo.png");
   background-repeat: no-repeat;
   border-radius: 22px;
   padding: 172px 128px 151px 128px;
-  width:750px;
+  width: 750px;
   height: 423px;
- 
 }
-
-
-
 
 .offer {
   font-size: 1.3rem;
@@ -256,18 +250,18 @@ body {
   gap: 15px;
 }
 /* Join section styles */
-.input-banner-section{
+.input-banner-section {
   margin-bottom: 100px;
 }
-.input-banner{
-  background-image:url('../assets/news-letter-bg.png');
+.input-banner {
+  background-image: url("../assets/news-letter-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   width: 100%;
   height: 600px;
 }
-.input-banner-title{
+.input-banner-title {
   align-items: center;
   text-align: center;
   padding-top: 200px;
@@ -275,99 +269,70 @@ body {
   font-weight: 700;
   color: white;
 }
-.input-card{
-   text-align: center;
+.input-card {
+  text-align: center;
   padding-top: 50px;
   display: flex;
   justify-content: center;
 }
-.input-title{
+.input-title {
   background-color: white;
   color: #252432;
   font-weight: 700;
   padding: 26px 50px 26px 50px;
-  width:40%;
+  width: 40%;
   border: none;
 }
-.join-button{
+.join-button {
   background-color: #e95a08;
-  color:white;
+  color: white;
   font-weight: 700;
   padding: 26px 50px 26px 50px;
   width: auto;
   border: none;
-
 }
-  
- 
+
 /* footer section styles */
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.footer-left-title{
+.footer-left-title {
   font-size: 1.4rem;
   margin-top: 20px;
 }
-.left-side-link{
+.left-side-link {
   text-decoration: none;
-  color: #6B7280;
+  color: #6b7280;
   font-size: 1.1rem;
 }
-.right-side-links,.left-side-links{
+.right-side-links,
+.left-side-links {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
-.social-links{
+.social-links {
   display: flex;
   column-gap: 30px;
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ttt-w {
+  width: 35px;
+  height: 35px;
+}
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-links-home,
   .nav-links-about,
-  .nav-links-shop, .trust-badge{
+  .nav-links-shop,
+  .trust-badge {
     display: none;
   }
-  .nav-links-shop{
 
+  .nav-links-shop {
   }
   .banner {
     flex-direction: column-reverse;
@@ -394,7 +359,8 @@ body {
   }
   .banner-discription,
   .plants-lover-right-content ul li,
-  .deals-section-discription,.footer-left-title {
+  .deals-section-discription,
+  .footer-left-title {
     font-size: 14px;
   }
   .plants-lover-right-content ul li {
@@ -434,8 +400,9 @@ body {
   .deals-section-discription {
     padding: 0;
   }
-  .zabo-plant,.ana-plant {
-    width:340px;
+  .zabo-plant,
+  .ana-plant {
+    width: 340px;
     height: 200px;
     padding: 0;
     padding-top: 65px;
@@ -450,30 +417,30 @@ body {
     font-size: 16px;
     text-align: center;
   }
-  .footer{
+  .footer {
     flex-direction: column;
     row-gap: 30px;
     justify-content: flex-start;
     margin: 0px 16px;
     margin-bottom: 50px;
   }
-  .social-links{
+  .social-links {
     align-items: center;
   }
-  .input-title{
-  width:45%;
-}
-.input-banner{
- width: 100%;
-  height:300px;
-}
-.input-banner-title{
-  font-size: 30px;
-  padding-top: 100px;
-}
-.join-button{
-
-  padding: 26px 20px 26px 20px;
-  
-}
+  .input-title {
+    width: 55%;
+  }
+  .input-banner {
+    width: 100%;
+    height: 300px;
+  }
+  .input-banner-title {
+    font-size: 30px;
+    padding-top: 100px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .join-button {
+    padding: 26px 20px 26px 20px;
+  }
 }
