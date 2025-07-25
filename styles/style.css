@@ -40,6 +40,14 @@
   font-weight: 600;
   padding: 16px 0px;
 }
+.btn-primary:hover{
+  background-color: #70d6c5;
+  color: #3d5387;
+  transition: all 1s;
+  transform: scale(1.1);
+  border-radius: 7px;
+}
+
 
 /* body-section-styles */
 body {
@@ -147,6 +155,9 @@ body {
   position: absolute;
   top: -150px;
   left: 385px;
+  animation-name: spin;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
 }
 .plants-lover-title {
   font-size: 3.1rem;
@@ -195,24 +206,27 @@ body {
   text-align: center;
 }
 .bloom-plant {
-  background: url("../assets/deal-bloom.png");
+  background:rgba(0,0,0,0.4)url("../assets/deal-bloom.png");
   background-repeat: no-repeat;
+  background-blend-mode:darken ;
   padding: 65px 50px;
   border-radius: 22px;
   max-width: 361px;
   height: 200px;
 }
 .ana-plant {
-  background-image: url("../assets/deal-ana.png");
+  background:rgba(0,0,0,0.4)url("../assets/deal-ana.png");
   background-repeat: no-repeat;
+  background-blend-mode: darken;
   padding: 65px 50px;
   border-radius: 22px;
   width: 361px;
   height: 200px;
 }
 .zabo-plant {
-  background-image: url("../assets/deal-zabo.png");
+  background:rgba(0, 0, 0, 0.4)url("../assets/deal-zabo.png");
   background-repeat: no-repeat;
+  background-blend-mode: darken;
   border-radius: 22px;
   padding: 172px 128px 151px 128px;
   width: 750px;
@@ -275,7 +289,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.input-email{
+.input-email {
   background-color: white;
   color: #252432;
   font-weight: 700;
@@ -323,6 +337,16 @@ body {
   height: 35px;
 }
 
+/* animition */
+@keyframes spin{
+  0%{
+  
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-links-home,
@@ -338,7 +362,8 @@ body {
     width: 100%;
     margin-bottom: 28px;
   }
-  .navbar, .banner-content {
+  .navbar,
+  .banner-content {
     margin: 0 16px;
   }
   .banner-title,
