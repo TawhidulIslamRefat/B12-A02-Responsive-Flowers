@@ -269,13 +269,13 @@ body {
   font-weight: 700;
   color: white;
 }
-.input-card {
+.input-form {
   text-align: center;
   padding-top: 50px;
   display: flex;
   justify-content: center;
 }
-.input-title {
+.input-email{
   background-color: white;
   color: #252432;
   font-weight: 700;
@@ -331,9 +331,6 @@ body {
   .trust-badge {
     display: none;
   }
-
-  .nav-links-shop {
-  }
   .banner {
     flex-direction: column-reverse;
   }
@@ -341,11 +338,8 @@ body {
     width: 100%;
     margin-bottom: 28px;
   }
-  .navbar {
+  .navbar, .banner-content {
     margin: 0 16px;
-  }
-  .banner-content {
-    margin: 0px 16px;
   }
   .banner-title,
   .banner-title-2,
@@ -427,7 +421,7 @@ body {
   .social-links {
     align-items: center;
   }
-  .input-title {
+  .input-email {
     width: 55%;
   }
   .input-banner {
@@ -436,7 +430,7 @@ body {
   }
   .input-banner-title {
     font-size: 30px;
-    padding-top: 100px;
+    padding-top: 70px;
     margin-left: 16px;
     margin-right: 16px;
   }
